@@ -11,7 +11,7 @@ The goal was a genuinely usable character-animation workflow for people *without
 
 > **Provenance:** I designed and built this pipeline end-to-end. It was later written up as a group semester research paper at Chandigarh University (*Efficient 3D Character Animation Using Pose Estimation: A Resource-Constrained Approach* — co-authors Ishan Dev, Ch. Sai Viswanath Sarma, M. Soumith; faculty advisor Prof. Ruksana). The full draft is included as [`Research Paper Draft.docx`](Research%20Paper%20Draft.docx).
 >
-> It was also published on OpenArt's community workflow library, where it reached **160+ downloads** before OpenArt deprecated its public ComfyUI workflow library in 2026 — which is why this repository is now the canonical home for the workflows and assets.
+> It was also published on OpenArt's community workflow library, where it reached **160+ downloads** before OpenArt deprecated its public ComfyUI workflow library in 2026 — which is why this repository is now the canonical home for the workflows and assets. The original listing (`openart.ai/workflows/shepherd_buttery_70/effecient-3d-character-animation/iasYnsRpkR0x3R3ZTtJK`) now redirects to the OpenArt home page and is no longer accessible.
 
 ---
 
