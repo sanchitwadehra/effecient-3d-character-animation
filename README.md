@@ -63,24 +63,24 @@ The workflow was benchmarked across **eight configurations** — four motion mod
 
 **Winner: `v3sd15mm` + LCM (8 steps).** It delivered the best clarity, lighting, sharpness, and motion tracking while preserving the character's consistency. Without LCM, `v3sd15mm` suffered heavy background color bleeding; the 4-step AnimateDiff-Lightning module captured expressions but lost quality and consistency. `v3sd15mm` + LCM was the balanced sweet spot.
 
-Rendered output clips for the runs are in [`Project Outputs/`](Project%20Outputs) (`AnimateDiff_00106`–`00113`, `.mp4` + still). A screen recording of the workflow running is in [`working_video_recording.webm`](working_video_recording.webm).
+Every configuration's rendered clip is in [`Project Outputs/`](Project%20Outputs) and mapped to its workflow in the table below.
 
 ---
 
 ## The workflows
 
-All eight benchmarked ComfyUI graphs are in [`Workflows/`](Workflows) — drop any `.json` into ComfyUI to run it.
+All eight benchmarked ComfyUI graphs are in [`Workflows/`](Workflows) — drop any `.json` into ComfyUI to run it. Each row links the workflow to its rendered output clip (configuration verified from the metadata embedded in each render).
 
-| Sampling | Configuration | File |
-|---|---|---|
-| Non-LCM | AnimateDiff-Lightning, 4 steps | [`4step_animatediff_lightning.json`](Workflows/4step_animatediff_lightning.json) |
-| Non-LCM | AnimateDiff-Lightning, 8 steps | [`8step_animatediff_lightning.json`](Workflows/8step_animatediff_lightning.json) |
-| Non-LCM | mm-sd-v15-v2, 20 steps | [`20step_mmsdv15v2.json`](Workflows/20step_mmsdv15v2.json) |
-| Non-LCM | v3-sd15-mm, 20 steps | [`20step_v3sd15mm.json`](Workflows/20step_v3sd15mm.json) |
-| LCM | AnimateDiff-Lightning, 4 steps | [`4step_lcm_animatediff_lightning.json`](Workflows/4step_lcm_animatediff_lightning.json) |
-| LCM | AnimateDiff-Lightning, 8 steps | [`8step_lcm_animatediff_lightning.json`](Workflows/8step_lcm_animatediff_lightning.json) |
-| LCM | mm-sd-v15-v2, 8 steps | [`8step_lcm_mmsdv15v2.json`](Workflows/8step_lcm_mmsdv15v2.json) |
-| **LCM** | **v3-sd15-mm, 8 steps — best** | [`8step_lcm_v3sd15mm.json`](Workflows/8step_lcm_v3sd15mm.json) |
+| Sampling | Configuration | Workflow | Rendered clip |
+|---|---|---|---|
+| Non-LCM | AnimateDiff-Lightning, 4 steps | [`4step_animatediff_lightning.json`](Workflows/4step_animatediff_lightning.json) | [`AnimateDiff_00106.mp4`](Project%20Outputs/AnimateDiff_00106.mp4) |
+| Non-LCM | AnimateDiff-Lightning, 8 steps | [`8step_animatediff_lightning.json`](Workflows/8step_animatediff_lightning.json) | [`AnimateDiff_00108.mp4`](Project%20Outputs/AnimateDiff_00108.mp4) |
+| Non-LCM | mm-sd-v15-v2, 20 steps | [`20step_mmsdv15v2.json`](Workflows/20step_mmsdv15v2.json) | [`AnimateDiff_00112.mp4`](Project%20Outputs/AnimateDiff_00112.mp4) |
+| Non-LCM | v3-sd15-mm, 20 steps | [`20step_v3sd15mm.json`](Workflows/20step_v3sd15mm.json) | [`AnimateDiff_00113.mp4`](Project%20Outputs/AnimateDiff_00113.mp4) |
+| LCM | AnimateDiff-Lightning, 4 steps | [`4step_lcm_animatediff_lightning.json`](Workflows/4step_lcm_animatediff_lightning.json) | [`AnimateDiff_00107.mp4`](Project%20Outputs/AnimateDiff_00107.mp4) |
+| LCM | AnimateDiff-Lightning, 8 steps | [`8step_lcm_animatediff_lightning.json`](Workflows/8step_lcm_animatediff_lightning.json) | [`AnimateDiff_00109.mp4`](Project%20Outputs/AnimateDiff_00109.mp4) |
+| LCM | mm-sd-v15-v2, 8 steps | [`8step_lcm_mmsdv15v2.json`](Workflows/8step_lcm_mmsdv15v2.json) | [`AnimateDiff_00110.mp4`](Project%20Outputs/AnimateDiff_00110.mp4) |
+| **LCM** | **v3-sd15-mm, 8 steps — best** | [`8step_lcm_v3sd15mm.json`](Workflows/8step_lcm_v3sd15mm.json) | [`AnimateDiff_00111.mp4`](Project%20Outputs/AnimateDiff_00111.mp4) |
 
 ---
 
@@ -104,6 +104,5 @@ Workflows/                   # 8 benchmarked ComfyUI workflow graphs (.json)
 Project Outputs/             # Rendered animation clips + stills (AnimateDiff_00106–00113)
 1.png … 6.png                # Pipeline node screenshots (walkthrough above)
 Output Comparison Chart.png  # 8-configuration quality comparison
-working_video_recording.webm # Screen recording of the workflow running
 Research Paper Draft.docx    # Full semester research-paper write-up
 ```
